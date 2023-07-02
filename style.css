@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+
 body{
     margin-left : 0px;
     margin-right: 0;
@@ -20,10 +26,12 @@ nav h1{
     font-size: 40px;
     margin-top: 15px;
     margin-left: 10px;
+    font-family: 'Montserrat';
 }
 
 nav .onglets{
     margin-left: 250px;
+    font-family: 'Poppins';
 }
 
 nav .onglets a{
@@ -80,6 +88,7 @@ nav .onglets a{
     flex-wrap: wrap;
     text-align: center;
     padding-bottom: 30px;
+    font-family: 'Raleway';
     
 }
 
@@ -93,6 +102,7 @@ nav .onglets a{
     flex-wrap: wrap;
     font-size: 25px;
     align-content: center;
+    font-family: 'Poppins';
     
 }
 
@@ -124,10 +134,12 @@ nav .onglets a{
     padding-bottom: 50px;
     padding-top: 20px;
    color: #ffffff;
+   font-family: 'Poppins';
 }
 
 .newsletter .titre{
     font-size: 30px;
+    font-family: 'Poppins';
 }
 
 .newsletter .image img{
@@ -150,6 +162,7 @@ nav .onglets a{
     padding-left: 15px;
     padding-right: 15px;
     line-height: 32px;
+    font-family: 'Raleway';
 }
 
 .newsletter .two .image img{
@@ -172,6 +185,7 @@ nav .onglets a{
     padding-left: 15px;
     padding-right: 15px;
     line-height: 32px;
+    font-family: 'Raleway';
 }
 
 .newsletter .three .image img{
@@ -194,6 +208,7 @@ nav .onglets a{
     padding-left: 15px;
     padding-right: 15px;
     line-height: 32px;
+    font-family: 'Raleway';
 }
 
 .newsletter .four .image img{
@@ -216,6 +231,7 @@ nav .onglets a{
     padding-left: 15px;
     padding-right: 15px;
     line-height: 32px;
+    font-family: 'Raleway';
 }
 
 .application{
