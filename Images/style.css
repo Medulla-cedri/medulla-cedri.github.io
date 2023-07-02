@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+
+body{
+    margin-left : 0px;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0px;
+    /*font-family:  A chercher sur google font ;*/
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 5px solid #0064FF;
+    background-color: #FCA684;
+    
+}
+
+nav h1{
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Montserrat';
+}
+
+nav .onglets{
+    margin-left: 250px;
+    font-family: 'Poppins';
+}
+
+nav .onglets a{
+    margin-left: 20px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.acceuil{
+    margin-top: 120px;
+    display: flex;
+    flex: column;
+    background: url("Images/breakwater-g94aa7937c_1920.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.acceuil .gauche{
+    margin-left: 150px;
+    margin-right: 100px;
+    background-color: #ffffff;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 80px;
+
+}
+
+.acceuil .gauche .logo img{
+    height: 250px;
+    width: 300px;
+    margin-right: 30px;
+    margin-left: 55px;
+    margin-top: 30px;
+
+}
+
+.acceuil .gauche .photo img{
+    height: 350px;
+    width: 350px;
+    margin-left: 30px;
+    margin-top: 100px;
+    margin-right: 30px;
+
+}
+
+.acceuil .droite h1{
+    font-size: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Raleway';
+    
+}
+
+.acceuil .droite{
+    background-color: #FCA684;
+    color: #ffffff;
+    padding-right: 50px;
+    padding-left: 20px;
+    margin-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    align-content: center;
+    font-family: 'Poppins';
+    
+}
+
+/*.acceuil .droite .bouton .form #email{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 40px;
+}*/
+
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 100px;
+    background: url("Images/mountain-gcc9255b7e_1920.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 50px;
+}
+
+.newsletter .titre_principal{
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2048px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+   color: #ffffff;
+   font-family: 'Poppins';
+}
+
+.newsletter .titre{
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+
+.newsletter .image img{
+    height: 100px;
+    width: 150px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.newsletter .one{
+    margin-top: 50px;
+    margin-left: 40px;
+    background-color: #ffffff;
+    width: 420px ;
+}
+
+.newsletter .one .texte{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 32px;
+    font-family: 'Raleway';
+}
+
+.newsletter .two .image img{
+    height: 100px;
+    width: 150px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.newsletter .two{
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    width: 420px ;
+}
+
+.newsletter .two .texte{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 32px;
+    font-family: 'Raleway';
+}
+
+.newsletter .three .image img{
+    height: 100px;
+    width: 150px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.newsletter .three{
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    width: 420px ;
+}
+
+.newsletter .three .texte{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 32px;
+    font-family: 'Raleway';
+}
+
+.newsletter .four .image img{
+    height: 100px;
+    width: 150px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.newsletter .four{
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    width: 420px ;
+}
+
+.newsletter .four .texte{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 32px;
+    font-family: 'Raleway';
+}
+
+.application{
+    padding-top: 100px;
+}
