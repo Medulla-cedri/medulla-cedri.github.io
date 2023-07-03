@@ -62,6 +62,7 @@ nav .onglets a{
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 4%;
+    width: 150%;
 
 }
 
@@ -78,10 +79,10 @@ nav .onglets a{
 
 .acceuil .gauche .photo img{
     height: auto;
-    width: 350px;
-    margin-left: 30px;
-    margin-top: 100px;
-    margin-right: 30px;
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 30%;
+    
 
 }
 
