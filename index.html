@@ -1,136 +1,244 @@
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KALI MINDY</title>
+    <title>Emmanuel LITAISE</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Images\logo.jpg" type="image/x-icon">
+
+    <link rel="icon" href="favicon.ico" />
+
+    <!--Javascript pour l'affichage des pages-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#onglet-accueil').addClass('active');
+            $('.page-title').hide();
+            $('#onglet-accueil .page-title').show();
+
+            $('.onglets a').on('click', function (event) {
+                event.preventDefault();
+
+                var targetPage = $(this).attr('href');
+
+                $('.page').removeClass('active');
+                $('.onglets a').removeClass('active');
+                $(targetPage).addClass('active');
+                $(this).addClass('active');
+
+                $('.page-title').hide();
+                $(targetPage + ' .page-title').show();
+            });
+        });
+    </script>
 </head>
+
 <body>
+
+    <!-- Définition du logo et des onglets -->
+
     <nav>
-        <h1>KALI MINDY</h1>
+        <h1 class="logo">EMMANUEL LITAISE</h1>
         <div class="onglets">
-            <a href="#accueil">Accueil</a>
-            <!--<a href="#application">Application</a>-->
-            <a href="#newsletter">Newsletter</a>
-            <a href="#contact">Contact</a>
+            <a href="#page-accueil" id="onglet-accueil">Accueil</a>
+            <a href="#page-presentation">Présentation</a>
+            <a href="#page-cabinet-dieppe">Cabinet de Dieppe</a>
+            <a href="#page-cabinet-grum">Cabinet de Grumesnil</a>
+            <a href="#page-problematiques">Problématiques et outils thérapeutiques</a>
+            <a href="#page-pratique">Pratique et support théorique</a>
         </div>
     </nav>
 
-    <section class="acceuil" id="accueil">
-        <div class="gauche">
-            <div class="logo">
-                <img src="Images\logo.jpg" alt="" class="responsive">
-            </div>
-            <div class="photo">
-                <img src="Images\Photo acceuil télphone.jpg" alt="">
-            </div>
+    <!-- Création des différentes pages -->
 
+    <section class="pages">
+        <div id="page-accueil" class="page active">
+            <h4>Accueil</h4>
+                <ul>
+                    <li>Psychologue Clinicien</li><br>
+                    <li>Accompagnement individuel ou familial pour adultes et enfants à l'aide de thérapie brève</li><br>
+                    <br>
+                    <ul>Contact <br>
+                        <br>
+                        <li><a href="tel:06.95.02.42.78">06.95.02.42.78</a></li>
+                        <br>
+                        <li><a href="mailto:elitaise@yahoo.fr">elitaise@yahoo.fr</a></li>
+                    </ul>
+                    <br>
+                    <br>    
+                    <li>Cabinet de Dieppe: 10 rue Desceliers - 76200 Dieppe</li><br>
+                    <li>Cabinet de Grumesnil: 26 rue Tracia - 76440 Grumesnil</li><br>
+                        <br>
+                    <li>Possibilités de consultation à domicile et via skype.</li><br>
+                        
+                    <li>N° Adeli : 769315797</li>
+                </ul>
         </div>
 
-        <div class="droite">
-            <h1>L'application de santé mentale inclusive</h1>
-            <p class="1">Nous sommes en train de préparer le lancement tant attendu de notre nouvelle application révolutionnaire en santé mentale inclusive.</p>
-            <p class="2">Et devine quoi ? <br>
-                Tu auras un accès privilégié à toutes les informations en avant-première !</p>
-            <p class="3">En t'inscrivant à notre newsletter, tu découvriras chaque semaine des articles captivants qui éclairent tes pensées, des témoignages inspirants de personnes qui ont surmonté des défis, afin de t'encourager dans votre parcours.</p>
-            <p class="4">Mais ce n'est pas tout ! <br>
-                Tu auras également la chance de participer à des événements exclusifs, de faire des rencontres enrichissantes, de découvrir des livres, des vidéos, podcasts captivants.</p>
-            <!--<div class="bouton">
-                <form>
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="email" required>
-                    <input type="submit" value="Je m'inscris">
-                  </form>
-                </div>-->
-            </div>
-    </section>
+        <div id="page-presentation" class="page">
 
-    <!--<section class="application" id="application">
-        <img src="Images/maintenance-g129e08bfc_1920.jpg" alt="">
-    </section>-->
-
-    <section class="newsletter" id="newsletter">
-        <div class="titre_principal">
-            <h3>THE KALI MINDY BLOG</h3>
-            <h1>La newletters qui fait du bien</h1>
-        </div>
-
-        <div class="one">
-            <div class="image">
-                <img src="Images\One.jpg" alt="">
-            </div>
-            <div class="titre">
+            <div class="flex-presentation"><img src="/images/emmanuel n&b.jpg" alt="Photo-présentation" class="image-third">
                 
-                <h3>Profil d'artistes & interviews</h3>
-            </div>
-            <div class="texte">
-                <p>Rencontrer le "qui est-ce qui" du monde des cosmétiques et du maquillage pour découvrir ce qui est nouveau et excitant. Découvrez les tendances avant qu'elles ne le deviennent et découvrez ce qui inspire les personnes qui inspirent tout le monde.</p>
-            </div>
-        </div>
-
-        <div class="two">
-            <div class="image">
-                <img src="Images\two.jpg" alt="">
-            </div>
-            <div class="titre">
-                <h3>Des avis honnêtes sur les produits</h3>
-            </div>
-            <div class="texte">
-                <p>Il peut être difficile de choisir des produits éthiques de qualité qui conviennent à votre teint et à votre type de peau. C'est pourquoi je dépense d'abord l'argent que j'ai durement gagné pour que vous n'ayez pas à le faire. Découvrez ce qui est à la hauteur des attentes et ce que vous pouvez probablement laisser tomber.</p>
-            </div>
-        </div>
-
-        <div class="three">
-            <div class="image">
-                <img src="Images\three.jpg" alt="">
-            </div>
-            <div class="titre">
-                <h3>Réduction pour les sponsors</h3>
-            </div>
-            <div class="texte">
-                <p>Nous aimons nos sponsors et ils nous le rendent bien en proposant des offres exclusives à nos lecteurs. Le maquillage peut être coûteux, alors inscrivez-vous et accédez à des produits de qualité avec une réduction significative.</p>
-            </div>
-        </div>
-
-        <div class="four">
-            <div class="image">
-                <img src="Images/four.jpg" alt="">
-            </div>
-            <div class="titre">
-                <h3>Conseils et astuces d'experts</h3>
-            </div>
-            <div class="texte">
-                <p>Qu'il s'agisse d'imperfections parfaitement camouflées, de looks de gala exagérés ou même de maquillages d'Halloween très effrayants, nos amis de l'industrie nous font part de leurs conseils et astuces de maquillage pour toutes les occasions.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="blabla">
-            <h1>Inscrivez-vous à ma newsletter pour recevoir gratuitement mon guide de maquillage quotidien dès aujourd'hui !</h1>
-            <button>JE VEUX LE RECEVOIR</button>
-        </div>
-        <div class="contact2">
-            <div class="coordonnees">
-                <h1>(+33) 06-0000000</h1>
-                <a href="mailto:hello@kalimindy.com">hello@kalimindy.com</a>
-            </div>
-            <div class="logo2">
-                <img src="Images/logo.jpg" alt="">
-            </div>
+                <p class="presentation-text">Suite à un début de carrière professionnelle dans la haute technologie avec un diplôme d'ingénieur, j'ai décidé en 2008 de reprendre mes études en psychologie clinique à l'université. <br>
+                    <br>
+                    Thérapeute formé sur une pratique intégrative, je m'emploie à aider la personne d'une façon globale en incluant les dimensions individuelles, familiales, culturelles et sociétales susceptible de perturber le fonctionnement psychique, émotionnel et d'entrainer des comportements inadaptés. <br>
+                    <br>
+                    Je fonde ma relation d'aide selon 3 principes majeurs: l'empathie, l'écoute active et la neutralité bienveillante. <br>
+                    <br>
+                    Afin d'accompagner l'individu dans ses questionnements, ses problématiques et ses volontés de changement, j'utilise différents outils tels que l'hypnose, l'EMDR, des pratiques de thérapies familiales ainsi que des pratiques cognitivo-comportementales. <br>
+                    <br>
+                    Je reçois en rendez-vous les enfants, les adolescents et les adultes. J'alterne les consultations une semaine sur deux entre le cabinet en plein centre ville de Dieppe et celui de Grumesnil situé au coeur de la nature normande</p>
+                    </div>
+            
             
         </div>
-        <div class="piedpage">
-            <p>©2023 KALIMINDY. all rights reserved. <a href="">Privacy Policy</a>. </p>
 
+        <div id="page-cabinet-dieppe" class="page">
+            <h1 class="title-cabinet">Cabinet de Dieppe</h1>
+            <span><a href="http://maps.google.com/?q=10 rue Desceliers, 76200 Dieppe">10 rue Desceliers, 76200 Dieppe </a>(fond de cour à gauche)</span>
+
+            <p>
+                <h4>Horaires :</h4>
+                <ul>
+                    <li>Du Lundi au Vendredi (1 semaine sur 2) de 9h à 19h</li>
+                    <li>Le Samedi de 9h à 12h (1 semaine sur 2)</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Tarif :</h4>
+                <ul>
+                    <li>60€ la séance</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Durée de la scéance :</h4>
+                <ul>
+                    <li>De 1h à 1h30</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Contact :</h4>
+                <ul>
+                    <li><a href="tel:06.95.02.42.78">06.95.02.42.78</a></li>
+                </ul>
+            </p>
+
+            <img src="/images/dieppe_2.png" alt="Cabinet de Dieppe" class="image-first">
+            <img src="/images/dieppe_1.png" alt="Cabinet de Dieppe" class="image-first">
+        </div>
+
+        <div id="page-cabinet-grum" class="page">
+            <h1 class="title-cabinet">Cabinet de Grumesnil</h1>
+            <span><a href="http://maps.google.com/?q=Bois de la Garenne, Grumesnil">26 rue Tracia 76440 Grumesnil</a> (2km après la sortie de Grumesnil en direction de Gaillefontaine sur la RD135).</span>
+
+            <p>
+                <h4>Horaires :</h4>
+                <ul>
+                    <li>Du Lundi au Vendredi (1 semaine sur 2) de 9h à 19h</li>
+                    <li>Le Samedi de 9h à 12h (1 semaine sur 2)</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Tarif :</h4>
+                <ul>
+                    <li>50€ la séance</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Durée de la scéance :</h4>
+                <ul>
+                    <li>De 1h à 1h30</li>
+                </ul>
+            </p>
+
+            <p>
+                <h4>Contact :</h4>
+                <ul>
+                    <li><a href="tel:06.95.02.42.78">06.95.02.42.78</a></li>
+                </ul>
+            </p>
+
+            <img src="/images/Grumesnil 1.png" alt="Cabinet de Grumesnil" class="image-second">
+            <img src="/images/Grumesnil 2.png" alt="Cabinet de Grumesnil" class="image-second">
+            
+        </div>
+
+        <div id="page-problematiques" class="page">
+            <p>
+                <h3>Problématiques principales traitées:</h3>
+                    <ul>
+                        <li>Séparations et deuils douloureux</li><br>
+                        <br>
+                        <li>Traumatisme lié à un ou des évènements particuliers (abus sexuels, viols, accidents, incendies...)</li><br>
+                        <br>
+                        <li>Confiance en soi altérée</li><br>
+                        <br>
+                        <li>Phobies</li><br>  
+                        <br>
+                        <li>Addictions</li><br>
+                        <br>
+                        <li>Gestion des émotions</li><br>
+                        <br>
+                        <li>Gestion de l'anxiété individuelle, scolaire ou professionnelle</li><br>
+                        <br>
+                        <li>Burn out</li><br>
+                        <br>
+                        <li>Harcèlement (scolaire, professionnel, familiale)</li><br>
+                </ul>
+            </p>
+        </div>
+
+        <div id="page-pratique" class="page">
+
+            <h1 class="title-pratique">Pratiques</h1>
+
+            <p>
+                <h4>EMDR </h4>
+                <ul>
+                    <li>(Eye Movement Desensitization and Reprocessing – « Mouvements des yeux qui déprogramment et re-traitent ») </li><br>
+                        <br>
+                    <li>Une approche qui traite le ou les traumatismes qu’ils soient simples (accidents, évènements difficiles ponctuels), ou complexes (différentes situations au cours de la vie, avec une forme de répétition). </li><br>
+                        <br>
+                    <li>Le traumatisme peut entraîner des changements radicaux dans le fonctionnement d’une personne bouleversant l’individu à long terme, car il s’enkyste à différents niveaux dans l’émotionnel, le cognitif, le sensoriel. </li><br>
+                        <br>
+                    <li>L’EMDR permet par une approche multi-axiales de débloquer les données dans le système limbique (zone émotionnelle du cerveau) en calmant le système émotionnel grâce aux mouvements alternatifs des yeux ou du taping. </li><br>
+                    
+                </ul>
+            </p>
+
+            <p>
+                <h4>Hypnose</h4>
+                <ul>
+                    <li>L’hypnose se pratique depuis bien longtemps et cette technique ancienne est utilisée dans les soins de toutes sortes. </li> <br>
+                    <br>
+                    <li>Grâce à la parole, le praticien va induire un état de conscience modifié qui est caractérisé par une hyper-concentration et une hyper-suggestibilité et également par une indifférence à l’extérieur</li> <br>
+                    <br>
+                    <li>Cet état particulier stimule et amplifie les ressources internes du sujet permettant une meilleure gestion de la douleur, et des blocages rencontrés.</li> <br>
+                    <br>
+                    <li>J'utilise une hypnose intégrative et non directive qui laisse toute la place à l’individu dans son changement, c’est un accompagnement. </li> <br>
+                    <br>
+                    <li>Cette technique permet dans certain cas de résoudre des traumatismes psychiques en effectuant une desensibilisation par double dissociation.</li> <br>
+                </ul>
+            
+            </p>
+
+            
+            
         </div>
     </section>
-    
-    <footer>
 
-    </footer>    
+    <footer class="footer">
+        © 2021 Emmanuel Litaise
+    </footer>
 
 </body>
+
 </html>
